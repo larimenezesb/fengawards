@@ -1,0 +1,1012 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feng Awards — O Campeonato Interno da Feng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap" rel="stylesheet">
+
+<svg style="display:none">
+  <symbol id="ic-trophy"  viewBox="0 0 24 24"><path d="M7 3h10v8a5 5 0 01-10 0V3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M7 5H4C4 10 6.5 12 9 12.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 5h3c0 5-2.5 7-5 7.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M8 21h8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></symbol>
+  <symbol id="ic-bolt"    viewBox="0 0 24 24"><polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="ic-struct"  viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><rect x="14" y="3" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><rect x="3" y="14" width="7" height="7" rx="1" fill="none" stroke="currentColor" stroke-width="2"/><path d="M17.5 14v7M14 17.5h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-brain"   viewBox="0 0 24 24"><path d="M12 5C10.5 5 9 6 9 7.5c0 .8.3 1.5.8 2C8.3 10 7 11.3 7 13c0 1.2.6 2.2 1.5 2.8C8.2 16.5 8 17.2 8 18c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2 0-.8-.2-1.5-.5-2.2.9-.6 1.5-1.6 1.5-2.8 0-1.7-1.3-3-2.8-3.5.5-.5.8-1.2.8-2C15 6 13.5 5 12 5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-star"    viewBox="0 0 24 24"><polygon points="12,2 15.1,8.3 22,9.3 17,14.1 18.2,21 12,17.8 5.8,21 7,14.1 2,9.3 8.9,8.3" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-target"  viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2" fill="currentColor"/></symbol>
+  <symbol id="ic-crown"   viewBox="0 0 24 24"><path d="M3 18h18M3 18L5 9l5 4 4-7 4 7 5-4 2 9H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+  <symbol id="ic-pass"    viewBox="0 0 24 24"><path d="M3 12h3l2-5 4 10 3-7 2 2h4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-shield"  viewBox="0 0 24 24"><path d="M12 3L4 6v6c0 4.4 3.4 8.5 8 9.5C17.6 20.5 21 16.4 21 12V6L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><polyline points="8,12 11,15 16,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-lateral" viewBox="0 0 24 24"><path d="M7 16V8m0 0L4 11m3-3l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M17 8v8m0 0l3-3m-3 3l-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></symbol>
+  <symbol id="ic-whistle" viewBox="0 0 24 24"><circle cx="10" cy="13" r="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15 13h6M10 8V5l8-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-mega"    viewBox="0 0 24 24"><path d="M3 10v4h4l6 5V5L7 10H3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M19 8c1.5 1 2.5 2.4 2.5 4s-1 3-2.5 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-ticket"  viewBox="0 0 24 24"><path d="M3 9a1 1 0 000 2v2a1 1 0 000 2v1a2 2 0 002 2h14a2 2 0 002-2v-1a1 1 0 000-2v-2a1 1 0 000-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v1z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="9" y1="6" x2="9" y2="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/></symbol>
+  <symbol id="ic-sun"     viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><line x1="12" y1="2" x2="12" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="19" x2="12" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.2" y1="4.2" x2="6.3" y2="6.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="17.7" y1="17.7" x2="19.8" y2="19.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="2" y1="12" x2="5" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="19" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="4.2" y1="19.8" x2="6.3" y2="17.7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="17.7" y1="6.3" x2="19.8" y2="4.2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-check"   viewBox="0 0 24 24"><polyline points="4,12 9,17 20,7" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="ic-fire"    viewBox="0 0 24 24"><path d="M12 2c0 0-4 4-4 8a4 4 0 008 0c0-1-.3-2-.8-3 0 0-1 2-2.2 2.5C13 7.5 12 2 12 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M8.5 16.5a4 4 0 007 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-medal"   viewBox="0 0 24 24"><circle cx="12" cy="15" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 3.5L6 8h12l-2.5-4.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><line x1="9" y1="3.5" x2="12" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="15" y1="3.5" x2="12" y2="9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-history" viewBox="0 0 24 24"><path d="M3 12a9 9 0 109-9H3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="3,7 3,12 8,12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="7" x2="12" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="12" x2="15" y2="14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="ic-lock"    viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11V7a4 4 0 018 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/></symbol>
+  <symbol id="ic-vote"    viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="7,10 10,13 17,8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="3" y1="5" x2="21" y2="5" stroke="currentColor" stroke-width="2"/><line x1="9" y1="2" x2="9" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="15" y1="2" x2="15" y2="5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+</svg>
+
+<style>
+:root {
+  --pu:    #1A0838;
+  --pu2:   #2D1456;
+  --pu3:   #3D1A72;
+  --or:    #FF5C00;
+  --or2:   #FF7A22;
+  --gold:  #FFB800;
+  --gold2: #E8A200;
+  --green: #00C06A;
+  --silver:#B8C4D8;
+  --w:     #FFFFFF;
+  --w04:   rgba(60,15,130,0.35);
+  --w06:   rgba(255,255,255,0.07);
+  --w10:   rgba(255,255,255,0.10);
+  --w20:   rgba(255,255,255,0.22);
+  --muted: #C09AE8;
+  --dark:  #080316;
+  --card:  rgba(60,15,130,0.35);
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Montserrat',sans-serif;background:var(--dark);color:var(--w);overflow-x:hidden;min-height:100vh}
+body::before{content:'';position:fixed;inset:0;pointer-events:none;z-index:9000;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.012) 3px,rgba(0,0,0,0.012) 4px)}
+
+/* ── TICKER ── */
+.topbar{background:var(--or);padding:7px 0;overflow:hidden;flex-shrink:0}
+.ticker-track{display:flex;width:100%;overflow:hidden}
+.ticker-inner{display:flex;gap:60px;white-space:nowrap;animation:ticker 30s linear infinite;font-family:'Bebas Neue',sans-serif;font-size:11px;font-weight:400;letter-spacing:1.2px;text-transform:uppercase;color:var(--w)}
+.ticker-inner span{display:flex;align-items:center;gap:10px}
+.td{width:5px;height:5px;border-radius:50%;background:var(--w);opacity:.35}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ── MAIN NAV (tabs) ── */
+.main-nav{
+  position:sticky;top:0;z-index:200;
+  background:rgba(7,7,15,0.97);
+  border-bottom:1px solid rgba(255,92,0,0.2);
+  backdrop-filter:blur(16px);
+  display:flex;align-items:stretch;
+  flex-shrink:0;
+  min-height:68px;
+}
+.nav-brand{display:flex;align-items:center;gap:12px;text-decoration:none;padding:0 36px;border-right:1px solid var(--w06);flex-shrink:0}
+.nb-icon{width:32px;height:32px;color:var(--or)}
+.nb-text{font-family:'Bebas Neue',sans-serif;font-size:26px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase}
+.nb-text em{color:var(--or);font-style:normal}.nb-feng-word{color:#A855F7}
+.nb-year{font-size:9px;font-weight:700;letter-spacing:3px;color:var(--muted);padding:2px 7px;border:1px solid var(--w06);margin-left:4px;align-self:center}
+.nav-tabs{display:flex;flex:1;overflow-x:auto;scrollbar-width:none}
+.nav-tabs::-webkit-scrollbar{display:none}
+.tab-btn{
+  display:flex;align-items:center;gap:7px;
+  padding:0 22px;
+  font-family:'Bebas Neue',sans-serif;
+  font-size:12px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;
+  color:var(--muted);background:transparent;border:none;
+  border-bottom:3px solid transparent;
+  cursor:pointer;transition:all .2s;white-space:nowrap;height:56px;
+}
+.tab-btn svg{width:15px;height:15px;flex-shrink:0}
+.tab-btn:hover{color:var(--w);border-bottom-color:rgba(255,92,0,.35)}
+.tab-btn.active{color:var(--or);border-bottom-color:var(--or)}
+.tab-badge{background:var(--or);color:var(--w);font-size:8px;font-weight:800;letter-spacing:1px;padding:2px 6px;border-radius:0;animation:pulse-b 2s ease-in-out infinite}
+@keyframes pulse-b{0%,100%{opacity:1}50%{opacity:.55}}
+
+/* state toggle (2026/2027) */
+.state-toggle{display:flex;align-items:center;gap:0;padding:0 20px;border-left:1px solid var(--w06);flex-shrink:0}
+.state-btn{padding:6px 14px;font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;cursor:pointer;border:1px solid var(--w06);background:transparent;color:var(--muted);transition:all .2s}
+.state-btn.on{background:rgba(255,92,0,.15);color:var(--or);border-color:rgba(255,92,0,.3)}
+.state-btn:first-child{border-right:none}
+
+/* ── PAGE SHELL ── */
+.page{display:none;min-height:calc(100vh - 100px)}
+.page.active{display:block}
+
+/* ── SHARED ── */
+.pw{max-width:1160px;margin:0 auto;padding:72px 48px}
+.s-label{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;color:var(--or);margin-bottom:12px;display:flex;align-items:center;gap:10px}
+.s-label::before{content:'';width:18px;height:2px;background:var(--or)}
+.s-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(34px,5vw,60px);font-weight:400;letter-spacing:1.5px;text-transform:uppercase;line-height:.95;margin-bottom:14px}
+.s-lead{font-size:15px;color:rgba(255,255,255,.70);line-height:1.85;max-width:580px;margin-bottom:48px;font-weight:300}
+.divider-label{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:2.0px;text-transform:uppercase;color:var(--muted);padding:12px 0;border-bottom:1px solid var(--w06);margin-bottom:2px;display:flex;align-items:center;gap:10px}
+.divider-label::before{content:'';width:14px;height:2px;background:var(--or);flex-shrink:0}
+
+/* buttons */
+.btn-or{background:linear-gradient(135deg,var(--or),#CC4500);color:var(--w);border:none;padding:14px 36px;font-family:'Bebas Neue',sans-serif;font-size:13px;font-weight:400;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:8px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));transition:all .25s;box-shadow:0 4px 24px rgba(255,92,0,.28)}
+.btn-or:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,92,0,.45)}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--w);border:none;padding:14px 36px;font-family:'Bebas Neue',sans-serif;font-size:13px;font-weight:400;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;display:inline-flex;align-items:center;gap:8px;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));transition:all .25s;box-shadow:0 4px 24px rgba(255,184,0,.25)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 8px 32px rgba(255,184,0,.45)}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid var(--w10);padding:14px 36px;font-family:'Bebas Neue',sans-serif;font-size:13px;font-weight:400;letter-spacing:1.2px;text-transform:uppercase;cursor:pointer;text-decoration:none;display:inline-block;transition:all .25s}
+.btn-ghost:hover{border-color:rgba(255,92,0,.35);color:var(--or)}
+
+/* ── PAGE 1: SOBRE ── */
+#page-sobre .hero{position:relative;overflow:hidden;padding:80px 48px 64px;text-align:center;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(100,30,200,.25) 0%,transparent 60%),radial-gradient(ellipse 100% 70% at 50% 100%,rgba(255,92,0,.10) 0%,transparent 65%),radial-gradient(ellipse 50% 40% at 75% 15%,rgba(255,92,0,.08) 0%,transparent 55%),linear-gradient(165deg,#1E0845 0%,#080316 55%,#1A0838 100%)}
+#page-sobre .hero::before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(-55deg,transparent,transparent 100px,rgba(255,255,255,.018) 100px,rgba(255,255,255,.018) 101px)}
+.hero-trophy-wrap{position:relative;display:inline-block;margin-bottom:28px}
+
+.hero-kicker{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:3.0px;text-transform:uppercase;color:var(--or);margin-bottom:16px}
+.hero-h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(68px,12vw,140px);font-weight:400;line-height:.88;letter-spacing:2.5px;text-transform:uppercase}
+.hero-h1 em{display:block;font-style:normal;color:transparent;-webkit-text-stroke:2px var(--or);font-size:clamp(40px,7vw,84px);letter-spacing:15px}
+.hero-tagline{font-family:'Montserrat',sans-serif;font-style:italic;font-size:clamp(16px,2.5vw,22px);color:var(--muted);margin-top:16px;margin-bottom:28px}
+.hero-copy{font-size:16px;color:rgba(255,255,255,.65);line-height:1.9;max-width:560px;margin:0 auto 40px;font-weight:300}
+.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+/* concept blocks */
+.concept-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.cblock{background:var(--card);border:1px solid var(--w06);padding:44px 38px;transition:all .35s}
+.cblock:hover{border-color:rgba(255,92,0,.18);transform:translateY(-3px)}
+.cblock-icon{width:36px;height:36px;color:var(--or);margin-bottom:18px}
+.cblock-title{font-family:'Bebas Neue',sans-serif;font-size:26px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;margin-bottom:10px}
+.cblock-body{font-size:14px;color:rgba(255,255,255,.72);line-height:1.8;font-weight:300}
+/* timeline */
+.timeline{display:flex;flex-direction:column;gap:2px;margin-top:48px}
+.tl-item{display:flex;gap:0;background:var(--card);border:1px solid var(--w06);overflow:hidden;transition:all .3s}
+.tl-item:hover{border-color:rgba(255,92,0,.18)}
+.tl-num{width:72px;flex-shrink:0;display:flex;align-items:center;justify-content:center;background:rgba(255,92,0,.07);border-right:1px solid var(--w06)}
+.tl-num span{font-family:'Bebas Neue',sans-serif;font-size:36px;font-weight:400;color:rgba(255,92,0,.5)}
+.tl-body{padding:24px 28px;flex:1}
+.tl-tag{font-family:'Bebas Neue',sans-serif;font-size:9px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase;color:var(--or);margin-bottom:4px}
+.tl-title{font-family:'Bebas Neue',sans-serif;font-size:22px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;margin-bottom:6px}
+.tl-desc{font-size:13px;color:rgba(255,255,255,.68);line-height:1.7;font-weight:300}
+.tl-badge{display:inline-block;margin-top:10px;font-family:'Bebas Neue',sans-serif;font-size:9px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;padding:4px 12px;border:1px solid rgba(255,92,0,.22);color:var(--or)}
+/* state-aware */
+.state-2026{display:block}
+.state-2027{display:none}
+body.s2027 .state-2026{display:none}
+body.s2027 .state-2027{display:block}
+
+/* ── PAGE 2: CATEGORIAS ── */
+.cat-hero{background:linear-gradient(135deg,rgba(255,255,255,.025),transparent);border-bottom:1px solid var(--w06);padding:56px 48px 48px}
+.cat-hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+/* main cats */
+.main-cats{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.mcat{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--w06);padding:40px 32px;transition:all .4s}
+.mcat-top{position:absolute;top:0;left:0;right:0;height:4px}
+.rel .mcat-top{background:linear-gradient(90deg,var(--or),var(--or2))}
+.est .mcat-top{background:linear-gradient(90deg,#9B5CF6,#C084FC)}
+.apr .mcat-top{background:linear-gradient(90deg,#A855F7,var(--or))}
+.mcat-ghost{position:absolute;right:-8px;bottom:-20px;font-family:'Bebas Neue',sans-serif;font-size:130px;font-weight:400;color:rgba(255,255,255,.025);line-height:1;pointer-events:none}
+.mcat:hover{border-color:rgba(255,92,0,.2);background:rgba(255,255,255,.07);transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.45)}
+.mcat-icon{width:36px;height:36px;color:var(--or);margin-bottom:18px}
+.mcat-num{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:2.0px;text-transform:uppercase;color:var(--or);margin-bottom:8px}
+.mcat-name{font-family:'Bebas Neue',sans-serif;font-size:40px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;line-height:1;margin-bottom:12px}
+.mcat-desc{font-size:13px;color:rgba(255,255,255,.68);line-height:1.75;margin-bottom:18px;font-weight:300}
+.mcat-list{list-style:none;display:flex;flex-direction:column;gap:9px}
+.mcat-list li{font-size:12px;color:rgba(255,255,255,.72);padding-left:16px;position:relative;line-height:1.5}
+.mcat-list li::before{content:'';position:absolute;left:0;top:8px;width:6px;height:2px;background:var(--or);border-radius:1px}
+/* special cats */
+.fcats{display:grid;grid-template-columns:repeat(4,1fr);gap:2px}
+.fcat{background:rgba(255,255,255,.025);border:1px solid var(--w06);padding:22px 18px;position:relative;transition:all .3s}
+.fcat-line{position:absolute;top:0;left:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--or),rgba(255,92,0,.1));opacity:0;transition:opacity .3s}
+.fcat:hover{border-color:rgba(255,92,0,.18);background:rgba(255,255,255,.05)}
+.fcat:hover .fcat-line{opacity:1}
+.fcat-icon{width:26px;height:26px;color:var(--or);margin-bottom:10px;opacity:.7;transition:opacity .3s}
+.fcat:hover .fcat-icon{opacity:1}
+.fcat-name{font-family:'Bebas Neue',sans-serif;font-size:17px;font-weight:400;letter-spacing:0.5px;text-transform:uppercase;color:var(--or);margin-bottom:3px}
+.fcat-sub{font-size:11px;font-style:italic;color:var(--muted);margin-bottom:7px}
+.fcat-desc{font-size:12px;color:rgba(255,255,255,.65);line-height:1.6;font-weight:300}
+
+/* ── PAGE 3: VOTAÇÃO ── */
+#page-votacao{background:rgba(45,20,86,.04)}
+.vote-hero{background:linear-gradient(135deg,rgba(255,255,255,.04),rgba(7,7,15,.6));border-bottom:1px solid var(--w06);padding:52px 48px 44px}
+.vote-hero-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1fr auto;gap:48px;align-items:center}
+.vote-step-cards{display:flex;gap:2px}
+.vstep{background:rgba(255,255,255,.025);border:1px solid var(--w06);padding:18px 20px;min-width:160px;text-align:center;transition:all .3s}
+.vstep.current{border-color:rgba(255,92,0,.35);background:rgba(255,92,0,.08)}
+.vstep-num{font-family:'Bebas Neue',sans-serif;font-size:32px;font-weight:400;color:rgba(255,92,0,.3);line-height:1;margin-bottom:4px}
+.vstep.current .vstep-num{color:var(--or)}
+.vstep-title{font-family:'Bebas Neue',sans-serif;font-size:14px;font-weight:400;letter-spacing:0.8px;text-transform:uppercase;margin-bottom:3px}
+.vstep.current .vstep-title{color:var(--or)}
+.vstep-sub{font-size:11px;color:var(--muted);font-weight:300}
+/* Vote layout — two columns */
+.vote-layout{display:grid;grid-template-columns:280px 1fr;gap:2px;align-items:start;margin-top:0}
+/* sidebar */
+.vote-sidebar{position:sticky;top:56px;background:rgba(255,255,255,.025);border:1px solid var(--w06)}
+.vsb-header{padding:18px 20px;border-bottom:1px solid var(--w06);background:rgba(255,255,255,.04)}
+.vsb-title{font-family:'Bebas Neue',sans-serif;font-size:14px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase}
+.vsb-sub{font-size:11px;color:var(--muted);font-weight:300;margin-top:2px}
+.vsb-item{display:flex;align-items:center;gap:10px;padding:11px 18px;border-bottom:1px solid var(--w04);cursor:pointer;transition:all .2s}
+.vsb-item:last-child{border-bottom:none}
+.vsb-item:hover,.vsb-item.done{background:rgba(255,92,0,.05)}
+.vsb-icon{width:16px;height:16px;color:var(--muted);flex-shrink:0;transition:color .2s}
+.vsb-item.done .vsb-icon{color:var(--green)}
+.vsb-name{font-family:'Bebas Neue',sans-serif;font-size:13px;font-weight:400;letter-spacing:0.5px;text-transform:uppercase;color:rgba(255,255,255,.6);transition:color .2s}
+.vsb-item:hover .vsb-name,.vsb-item.done .vsb-name{color:var(--w)}
+.vsb-dot{width:8px;height:8px;border-radius:50%;border:1.5px solid rgba(255,255,255,.2);flex-shrink:0;margin-left:auto;transition:all .2s}
+.vsb-item.done .vsb-dot{background:var(--green);border-color:var(--green)}
+/* vote panels */
+.vote-panels{background:rgba(255,255,255,.02);border:1px solid var(--w06)}
+.vpanel-header{padding:20px 28px;border-bottom:1px solid var(--w06);background:rgba(255,255,255,.025)}
+.vph-tag{font-family:'Bebas Neue',sans-serif;font-size:9px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase;color:var(--or);margin-bottom:3px}
+.vph-title{font-family:'Bebas Neue',sans-serif;font-size:20px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase}
+.vpanel-body{padding:24px 28px}
+/* text input for fase1 */
+.fi{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
+.fi label{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
+.feng-input{background:rgba(45,20,86,.35);border:1px solid var(--w06);color:var(--w);padding:12px 16px;font-family:'Montserrat',sans-serif;font-size:14px;font-weight:300;width:100%;outline:none;transition:border-color .25s}
+.feng-input:focus{border-color:var(--or)}
+.feng-input::placeholder{color:var(--muted)}
+.feng-ta{resize:vertical;min-height:68px}
+.panel-submit{padding:18px 28px;border-top:1px solid var(--w06);display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.panel-note{font-size:12px;color:var(--muted);font-weight:300}
+/* player cards fase2 */
+.pcards{display:grid;grid-template-columns:repeat(3,1fr);gap:2px}
+.pcard{position:relative;background:rgba(255,255,255,.025);border:1px solid var(--w06);padding:24px 20px;cursor:pointer;transition:all .3s;user-select:none}
+.pcard-top{position:absolute;top:0;left:0;right:0;height:3px;background:rgba(255,255,255,.06);transition:background .3s}
+.pcard.selected .pcard-top,.pcard:hover .pcard-top{background:linear-gradient(90deg,var(--or),var(--or2))}
+.pcard:hover{border-color:rgba(255,92,0,.2);background:rgba(255,255,255,.06)}
+.pcard.selected{border-color:rgba(255,92,0,.35);background:rgba(255,255,255,.06);box-shadow:0 0 0 1px rgba(255,92,0,.18),0 8px 28px rgba(0,0,0,.4)}
+.pcard input[type=radio]{display:none}
+.pcard-avatar{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.06);display:flex;align-items:center;justify-content:center;font-family:'Bebas Neue',sans-serif;font-size:16px;font-weight:400;border:2px solid var(--w06);margin-bottom:12px;transition:border-color .3s}
+.pcard.selected .pcard-avatar,.pcard:hover .pcard-avatar{border-color:var(--or)}
+.pcard-name{font-family:'Bebas Neue',sans-serif;font-size:18px;font-weight:400;letter-spacing:0.5px;margin-bottom:3px}
+.pcard-sub{font-size:11px;color:var(--muted);font-weight:300;font-style:italic;margin-bottom:12px}
+.pcard-sel{display:flex;align-items:center;gap:7px;font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:0.8px;text-transform:uppercase;color:var(--muted);transition:color .3s}
+.pcard.selected .pcard-sel{color:var(--or)}
+.pdot{width:15px;height:15px;border-radius:50%;border:2px solid rgba(255,92,0,.25);display:flex;align-items:center;justify-content:center;transition:all .3s;flex-shrink:0}
+.pcard.selected .pdot{border-color:var(--or);background:var(--or)}
+.pdot::after{content:'';width:5px;height:5px;border-radius:50%;background:var(--w);opacity:0;transition:opacity .2s}
+.pcard.selected .pdot::after{opacity:1}
+/* locked overlay */
+.fase2-lock{padding:48px 28px;text-align:center}
+.fl-icon{width:44px;height:44px;color:rgba(255,255,255,.12);margin:0 auto 14px}
+.fl-title{font-family:'Bebas Neue',sans-serif;font-size:22px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.2);margin-bottom:8px}
+.fl-sub{font-size:13px;color:var(--muted);line-height:1.7;font-weight:300;max-width:360px;margin:0 auto 18px}
+/* progress bar */
+.progress-wrap{padding:16px 28px;border-bottom:1px solid var(--w06)}
+.progress-label{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:1px;margin-bottom:6px;display:flex;justify-content:space-between}
+.progress-bar{height:3px;background:var(--w06);position:relative}
+.progress-fill{height:100%;background:linear-gradient(to right,var(--or),var(--or2));transition:width .5s ease;position:relative}
+.progress-fill::after{content:'';position:absolute;right:-1px;top:50%;transform:translateY(-50%);width:7px;height:7px;border-radius:50%;background:var(--or2);box-shadow:0 0 8px var(--or)}
+/* current category indicator in panels */
+.cat-nav{display:flex;gap:1px;padding:14px 28px;border-bottom:1px solid var(--w06);overflow-x:auto;scrollbar-width:none}
+.cat-nav::-webkit-scrollbar{display:none}
+.catnav-btn{padding:6px 14px;font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:0.8px;text-transform:uppercase;background:transparent;border:1px solid var(--w06);color:var(--muted);cursor:pointer;transition:all .2s;white-space:nowrap;flex-shrink:0}
+.catnav-btn:hover{border-color:rgba(255,92,0,.25);color:var(--w)}
+.catnav-btn.active{border-color:var(--or);color:var(--or);background:rgba(255,92,0,.07)}
+.catnav-btn.done{border-color:rgba(0,192,106,.35);color:var(--green)}
+
+/* ── PAGE 4: PREMIAÇÃO ── */
+#page-premiacao{}
+.premio-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.ptier{background:var(--card);border:1px solid var(--w06);padding:52px 44px;position:relative;overflow:hidden;transition:all .35s}
+.ptier::before{content:'';position:absolute;top:0;left:0;right:0;height:4px}
+.ptier.gold::before{background:linear-gradient(90deg,var(--gold),#FF8C00,var(--or))}
+.ptier.silver::before{background:linear-gradient(90deg,var(--pu3),#A78BFA)}
+.ptier:hover{transform:translateY(-3px);border-color:rgba(255,92,0,.15)}
+.ptier-bg{position:absolute;right:-16px;bottom:-28px;font-family:'Bebas Neue',sans-serif;font-size:120px;font-weight:400;color:rgba(255,255,255,.022);pointer-events:none;line-height:1}
+.ptier-tag{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:10px}
+.ptier.gold .ptier-tag{color:var(--gold)}
+.ptier.silver .ptier-tag{color:#A78BFA}
+.ptier-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(20px,2.5vw,32px);font-weight:400;letter-spacing:1.5px;text-transform:uppercase;line-height:1.1;margin-bottom:6px}
+.ptier-sub{font-size:13px;font-style:italic;color:var(--muted);margin-bottom:32px;font-weight:300}
+.pitem{display:flex;align-items:flex-start;gap:14px;margin-bottom:18px}
+.pitem-icon{width:40px;height:40px;flex-shrink:0;background:rgba(255,92,0,.06);border:1px solid rgba(255,92,0,.12);display:flex;align-items:center;justify-content:center}
+.pitem-icon svg{width:18px;height:18px;color:var(--or)}
+.pitem-qty{font-family:'Bebas Neue',sans-serif;font-size:26px;font-weight:400;line-height:1}
+.ptier.gold .pitem-qty{color:var(--gold)}
+.ptier.silver .pitem-qty{color:#A78BFA}
+.pitem-label{font-size:13px;font-weight:600;margin-bottom:2px}
+.pitem-detail{font-size:12px;color:var(--muted);font-weight:300}
+.ptier-cats{margin-top:24px;padding-top:20px;border-top:1px solid var(--w06)}
+.ptier-cats p{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+.pcat-item{display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(255,255,255,.65);margin-bottom:6px;font-weight:300}
+.pcat-item svg{width:12px;height:12px;color:var(--green);flex-shrink:0}
+/* the night section */
+.night-block{background:radial-gradient(ellipse 80% 60% at 50% 50%,rgba(255,92,0,.06),transparent),var(--card);border:1px solid rgba(255,184,0,.12);padding:56px;text-align:center;margin-top:2px}
+.nb-trophy{width:64px;height:64px;color:var(--gold);margin:0 auto 20px;animation:floatY 5s ease-in-out infinite;filter:drop-shadow(0 0 20px rgba(255,184,0,.3))}
+.nb-kicker{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.nb-title{font-family:'Bebas Neue',sans-serif;font-size:clamp(40px,7vw,80px);font-weight:400;letter-spacing:2.0px;text-transform:uppercase;line-height:.9;margin-bottom:16px}
+.nb-sub{font-family:'Montserrat',sans-serif;font-style:italic;font-size:clamp(15px,2vw,20px);color:var(--muted);margin-bottom:24px}
+.nb-copy{font-size:15px;color:rgba(255,255,255,.65);line-height:1.9;max-width:600px;margin:0 auto;font-weight:300}
+.nb-pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:44px;text-align:left}
+.nbp{background:rgba(255,255,255,.025);border:1px solid var(--w06);padding:26px 22px}
+.nbp-icon{width:24px;height:24px;color:var(--gold);margin-bottom:10px}
+.nbp-title{font-family:'Bebas Neue',sans-serif;font-size:15px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;margin-bottom:5px}
+.nbp-desc{font-size:12px;color:rgba(255,255,255,.65);line-height:1.6;font-weight:300}
+
+/* ── PAGE 5: HALL DA FAMA ── */
+#page-hall{}
+.hof-banner{background:linear-gradient(90deg,rgba(255,184,0,.07),rgba(255,255,255,.04));border:1px solid rgba(255,184,0,.14);padding:20px 28px;margin-bottom:2px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.hof-bl{display:flex;align-items:center;gap:12px}
+.hof-icon{width:24px;height:24px;color:var(--gold)}
+.hof-label{font-family:'Bebas Neue',sans-serif;font-size:18px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase}
+.hof-sub{font-size:12px;color:var(--muted);font-weight:300}
+.hof-badge{font-family:'Bebas Neue',sans-serif;font-size:10px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;padding:5px 14px;border:1px solid rgba(255,184,0,.28);color:var(--gold)}
+.hof-year{background:rgba(255,255,255,.025);border:1px solid var(--w06);overflow:hidden;margin-bottom:2px}
+.hof-yh{background:rgba(255,255,255,.05);padding:12px 22px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--w06)}
+.hof-ynum{font-family:'Bebas Neue',sans-serif;font-size:22px;font-weight:400;letter-spacing:1.5px;color:var(--gold)}
+.hof-ytag{font-size:9px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--muted);padding:2px 8px;border:1px solid var(--w06)}
+.hof-empty{padding:48px 40px;text-align:center}
+.hof-ei{width:44px;height:44px;color:rgba(255,184,0,.18);margin:0 auto 14px}
+.hof-et{font-family:'Bebas Neue',sans-serif;font-size:18px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.18);margin-bottom:6px}
+.hof-es{font-size:13px;color:var(--muted);font-weight:300;line-height:1.7;max-width:380px;margin:0 auto}
+/* legado manifesto */
+.manifesto{background:var(--card);border:1px solid rgba(255,184,0,.14);padding:56px;text-align:center;margin-top:2px}
+.manifesto-quote{font-family:'Montserrat',sans-serif;font-style:italic;font-size:clamp(18px,3vw,28px);color:rgba(255,255,255,.7);line-height:1.6;max-width:700px;margin:0 auto 24px}
+.manifesto-quote::before{content:'\201C'}
+.manifesto-quote::after{content:'\201D'}
+.manifesto-attr{font-family:'Bebas Neue',sans-serif;font-size:11px;font-weight:400;letter-spacing:2.0px;text-transform:uppercase;color:var(--or)}
+
+/* ── TOAST ── */
+.toast{position:fixed;bottom:24px;right:24px;transform:translateY(100px);opacity:0;background:var(--green);color:var(--w);padding:13px 22px;font-family:'Bebas Neue',sans-serif;font-size:13px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;z-index:9998;transition:all .4s cubic-bezier(.34,1.56,.64,1);display:flex;align-items:center;gap:9px;box-shadow:0 8px 32px rgba(0,192,106,.3)}
+.toast.show{transform:translateY(0);opacity:1}
+.toast svg{width:16px;height:16px}
+
+/* ── FOOTER ── */
+footer{background:rgba(7,7,15,.97);border-top:1px solid rgba(255,92,0,.12);padding:28px 48px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fb{display:flex;align-items:center;gap:9px}
+.fb svg{width:20px;height:20px;color:var(--or)}
+.fb-text{font-family:'Bebas Neue',sans-serif;font-size:16px;font-weight:400;letter-spacing:2.0px;text-transform:uppercase}
+.fb-text em{color:var(--or);font-style:normal}
+.fc{font-size:11px;color:var(--muted);letter-spacing:1.5px}
+
+/* ── ANIM ── */
+@keyframes floatY{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@keyframes pulseG{0%,100%{opacity:.6;transform:scale(1)}50%{opacity:1;transform:scale(1.04)}}
+
+@media(max-width:900px){
+  .main-nav{overflow-x:auto}
+  .pw{padding:56px 20px}
+  .cat-hero,.vote-hero{padding:40px 20px}
+  .cat-hero-inner{grid-template-columns:1fr;gap:32px}
+  .main-cats,.concept-grid,.premio-grid,.nb-pillars{grid-template-columns:1fr}
+  .fcats{grid-template-columns:repeat(2,1fr)}
+  .vote-layout{grid-template-columns:1fr}
+  .vote-sidebar{position:static;display:none}
+  .pcards{grid-template-columns:repeat(2,1fr)}
+  .vote-step-cards{flex-wrap:wrap}
+  .vote-hero-inner{grid-template-columns:1fr;gap:24px}
+  footer{padding:24px 20px;flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<!-- TICKER -->
+<div class="topbar">
+  <div class="ticker-track">
+    <div class="ticker-inner">
+      <span><span class="td"></span> FENG AWARDS — A CERIMÔNIA ANUAL DA FENG</span>
+      <span><span class="td"></span> TEMPORADA 2026 · PRIMEIRA EDIÇÃO OFICIAL EM 2027</span>
+      <span><span class="td"></span> 11 CATEGORIAS · TROFÉU FENG AWARDS · CAMAROTE + FOLGAS</span>
+      <span><span class="td"></span> RECONHECENDO QUEM FEZ A DIFERENÇA EM 2026</span>
+      <span><span class="td"></span> FENG AWARDS — A CERIMÔNIA ANUAL DA FENG</span>
+      <span><span class="td"></span> TEMPORADA 2026 · PRIMEIRA EDIÇÃO OFICIAL EM 2027</span>
+      <span><span class="td"></span> 11 CATEGORIAS · TROFÉU FENG AWARDS · CAMAROTE + FOLGAS</span>
+      <span><span class="td"></span> RECONHECENDO QUEM FEZ A DIFERENÇA EM 2026</span>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN NAV -->
+<nav class="main-nav">
+  <a href="#" class="nav-brand" onclick="goTab('sobre')">
+    <svg class="nb-icon" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+    <div class="nb-text"><span class="nb-feng-word">FENG</span> <em>AWARDS</em></div>
+    <span class="nb-year">2025–26</span>
+  </a>
+  <div class="nav-tabs">
+    <button class="tab-btn active" onclick="goTab('sobre')" id="tab-sobre">
+      <svg viewBox="0 0 24 24"><use href="#ic-trophy"/></svg> O Evento
+    </button>
+    <button class="tab-btn" onclick="goTab('categorias')" id="tab-categorias">
+      <svg viewBox="0 0 24 24"><use href="#ic-medal"/></svg> Categorias
+    </button>
+    <button class="tab-btn" onclick="goTab('votacao')" id="tab-votacao">
+      <svg viewBox="0 0 24 24"><use href="#ic-vote"/></svg> Votação
+      <span class="tab-badge state-2026">ABERTO</span>
+    </button>
+    <button class="tab-btn" onclick="goTab('premiacao')" id="tab-premiacao">
+      <svg viewBox="0 0 24 24"><use href="#ic-star"/></svg> Premiação
+    </button>
+    <button class="tab-btn" onclick="goTab('hall')" id="tab-hall">
+      <svg viewBox="0 0 24 24"><use href="#ic-history"/></svg> Hall da Fama
+    </button>
+  </div>
+  <div class="state-toggle">
+    <button class="state-btn on" onclick="setState('2026')" id="sbtn-2026">2026</button>
+    <button class="state-btn" onclick="setState('2027')" id="sbtn-2027">2027</button>
+  </div>
+</nav>
+
+<!-- ════════════════════════════════════
+     PAGE 1: O EVENTO
+════════════════════════════════════ -->
+<div class="page active" id="page-sobre">
+
+  <div class="hero">
+    <p class="hero-kicker">✦ Temporada 2026 · Primeira Edição Oficial ✦</p>
+    <h1 class="hero-h1">FENG<em>AWARDS</em></h1>
+    <p class="hero-tagline">— Um ano inteiro de entregas. Uma noite para reconhecer quem fez a diferença. —</p>
+    <p class="hero-copy">O Feng Awards nasce para reconhecer, todos os anos, as pessoas que elevaram o nível da operação, lideraram entregas e fizeram o time crescer. Mais do que uma premiação — é o momento em que a história da Feng é escrita.</p>
+    <div class="hero-ctas state-2026">
+      <button class="btn-or" onclick="goTab('votacao')"><svg style="width:14px;height:14px" viewBox="0 0 24 24"><use href="#ic-fire"/></svg> Fazer minha indicação</button>
+      <button class="btn-ghost" onclick="goTab('categorias')">Ver categorias</button>
+    </div>
+    <div class="hero-ctas state-2027" style="display:none">
+      <button class="btn-gold" onclick="goTab('votacao')"><svg style="width:14px;height:14px" viewBox="0 0 24 24"><use href="#ic-vote"/></svg> Votar nos finalistas</button>
+      <button class="btn-ghost" onclick="goTab('hall')">Ver Hall da Fama</button>
+    </div>
+  </div>
+
+  <div class="pw">
+    <!-- Estado 2026 -->
+    <div class="state-2026">
+      <p class="s-label">O Conceito</p>
+      <h2 class="s-title">O que é o<br>Feng Awards?</h2>
+      <p class="s-lead">Um campeonato interno anual. Uma cerimônia de reconhecimento. Um ritual que se repete todo ano e constrói a cultura da Feng ao longo do tempo.</p>
+      <div class="concept-grid">
+        <div class="cblock">
+          <svg class="cblock-icon" viewBox="0 0 24 24"><use href="#ic-fire"/></svg>
+          <div class="cblock-title">Reconhecimento Real</div>
+          <div class="cblock-body">O Feng Awards não é uma pesquisa de clima nem uma avaliação de performance. É a celebração das pessoas que foram protagonistas — que entregaram, evoluíram e fizeram o time crescer junto. O reconhecimento vem do próprio time, de quem viveu o ano ao lado de cada um.</div>
+        </div>
+        <div class="cblock">
+          <svg class="cblock-icon" viewBox="0 0 24 24"><use href="#ic-history"/></svg>
+          <div class="cblock-title">Um Ritual Anual</div>
+          <div class="cblock-body">A primeira edição oficial acontece em 2027, reconhecendo os destaques de 2026. Mas a tradição começa agora — com a temporada aberta, as indicações sendo registradas, e a expectativa sendo construída. Daqui pra frente, todo ano terá a sua noite.</div>
+        </div>
+        <div class="cblock">
+          <svg class="cblock-icon" viewBox="0 0 24 24"><use href="#ic-crown"/></svg>
+          <div class="cblock-title">Narrativa de Temporada</div>
+          <div class="cblock-body">Inspirado no esporte, o Feng Awards tem temporadas, fases, finalistas e campeões. Cada edição tem sua história. Cada vencedor entra para o Hall da Fama. A linguagem é de campeonato — porque é exatamente o que o time da Feng joga todos os anos.</div>
+        </div>
+        <div class="cblock">
+          <svg class="cblock-icon" viewBox="0 0 24 24"><use href="#ic-medal"/></svg>
+          <div class="cblock-title">Prêmios que Importam</div>
+          <div class="cblock-body">Além do Troféu Feng Awards, os vencedores ganham experiências reais — camarote em jogo e folgas extras. Porque quem deu o máximo merece descansar e celebrar em grande estilo.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estado 2027 -->
+    <div class="state-2027" style="display:none">
+      <p class="s-label">Edição 2027 · Temporada 2026</p>
+      <h2 class="s-title">A Cerimônia<br>chegou.</h2>
+      <p class="s-lead">A temporada 2026 terminou. Os finalistas foram selecionados. Agora é a hora de votar — e no grande dia, a história será escrita.</p>
+      <div class="concept-grid">
+        <div class="cblock">
+          <svg class="cblock-icon" viewBox="0 0 24 24"><use href="#ic-vote"/></svg>
+          <div class="cblock-title">Votação Final Aberta</div>
+          <div class="cblock-body">Nas categorias principais, os três finalistas foram definidos pelo Núcleo com base nas indicações. Nas categorias especiais, os três nomes mais indicados avançaram. Agora o time todo vota — de forma sigilosa, sem parciais visíveis. O vencedor só é revelado na Cerimônia.</div>
+        </div>
+        <div class="cblock">
+          <svg class="cblock-icon" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+          <div class="cblock-title">A Grande Noite</div>
+          <div class="cblock-body">A Cerimônia de Premiação é o clímax da temporada. Vencedores anunciados ao vivo, troféus entregues, nomes inscritos no Hall da Fama. O momento em que a história da Feng é escrita de vez.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline da Cerimônia (sempre visível) -->
+    <h3 class="s-title" style="margin-top:56px;font-size:clamp(26px,4vw,44px)">Como a cerimônia<br>acontece</h3>
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-num"><span>01</span></div>
+        <div class="tl-body">
+          <p class="tl-tag">Primeiro Ato · Aberto agora</p>
+          <p class="tl-title">Indicações Oficiais</p>
+          <p class="tl-desc">Todo o time indica quem merece ganhar em cada uma das 11 categorias. Qualquer nome pode ser sugerido — e cada indicação vem acompanhada de uma justificativa. É a voz do time falando o que o ano produziu.</p>
+          <span class="tl-badge state-2026">Em andamento — 2026</span>
+          <span class="tl-badge state-2027" style="display:none;border-color:rgba(0,192,106,.3);color:var(--green)">Concluído</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-num"><span>02</span></div>
+        <div class="tl-body">
+          <p class="tl-tag">Segundo Ato</p>
+          <p class="tl-title">Seleção dos Finalistas</p>
+          <p class="tl-desc">Nas três categorias principais — Relevância, Estrutura e Aprendizado — os finalistas são escolhidos pelo Núcleo, com base nas indicações recebidas. Nas categorias especiais, os três nomes mais indicados avançam automaticamente. A votação final é sigilosa — sem parciais visíveis, sem influência.</p>
+          <span class="tl-badge state-2026" style="border-color:rgba(255,255,255,.1);color:var(--muted)">Abre em 2027</span>
+          <span class="tl-badge state-2027" style="display:none">Em andamento — 2027</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-num"><span>03</span></div>
+        <div class="tl-body">
+          <p class="tl-tag">Terceiro Ato · O Clímax</p>
+          <p class="tl-title">Cerimônia de Premiação</p>
+          <p class="tl-desc">Anúncio ao vivo dos vencedores. Entrega do Troféu Feng Awards. Registro permanente no Hall da Fama. O momento em que cada nome é inscrito na história da Feng — e a temporada termina com chave de ouro.</p>
+          <span class="tl-badge state-2026" style="border-color:rgba(255,255,255,.1);color:var(--muted)">Abre em 2027</span>
+          <span class="tl-badge state-2027" style="display:none;border-color:rgba(255,184,0,.3);color:var(--gold)">A Grande Noite</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PAGE 2: CATEGORIAS
+════════════════════════════════════ -->
+<div class="page" id="page-categorias">
+  <div class="cat-hero">
+    <div class="cat-hero-inner">
+      <div>
+        <p class="s-label">Categorias da Temporada</p>
+        <h2 class="s-title">O que está<br>sendo avaliado</h2>
+        <p class="s-lead" style="margin-bottom:0">11 categorias que traduzem os valores da Feng em reconhecimento real. Três pilares principais e oito posições especiais — inspiradas no vocabulário do futebol.</p>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:80px;font-weight:400;line-height:1;color:rgba(80,20,160,0.08)">11</div>
+        <div style="font-family:'Bebas Neue',sans-serif;font-size:12px;font-weight:400;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted)">Categorias</div>
+      </div>
+    </div>
+  </div>
+  <div class="pw" style="padding-top:48px">
+    <div class="divider-label">Categorias Principais — Troféu Ouro</div>
+    <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(255,92,0,.06);border:1px solid rgba(255,92,0,.15);margin-bottom:2px">
+      <svg style="width:14px;height:14px;flex-shrink:0;color:var(--or)" viewBox="0 0 24 24"><use href="#ic-crown"/></svg>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:11px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;color:var(--or)">Regra</span>
+      <span style="font-size:13px;color:rgba(255,255,255,.6);font-weight:400">Nestas três categorias, os finalistas são escolhidos pelo <strong style="color:var(--w);font-weight:400">Núcleo</strong> com base nas indicações recebidas pelo time.</span>
+    </div>
+    <div class="main-cats">
+      <div class="mcat rel">
+        <div class="mcat-top"></div>
+        <div class="mcat-ghost">01</div>
+        <svg class="mcat-icon"><use href="#ic-bolt"/></svg>
+        <p class="mcat-num">Categoria 01</p>
+        <h3 class="mcat-name">Relevância</h3>
+        <p class="mcat-desc">Para quem foi protagonista em 2026 e deixou sua marca onde mais importava.</p>
+        <ul class="mcat-list">
+          <li>Liderou ou teve papel central em uma entrega especial</li>
+          <li>Assumiu novo papel com grande protagonismo e impacto</li>
+        </ul>
+      </div>
+      <div class="mcat est">
+        <div class="mcat-top"></div>
+        <div class="mcat-ghost">02</div>
+        <svg class="mcat-icon"><use href="#ic-struct"/></svg>
+        <p class="mcat-num">Categoria 02</p>
+        <h3 class="mcat-name">Estrutura</h3>
+        <p class="mcat-desc">Para quem ajudou a Feng a evoluir sua forma de fazer em 2026.</p>
+        <ul class="mcat-list">
+          <li>Implementou um novo processo ou ferramenta relevante</li>
+          <li>Gerou ganho de eficiência ou evolução no nível de serviço</li>
+        </ul>
+      </div>
+      <div class="mcat apr">
+        <div class="mcat-top"></div>
+        <div class="mcat-ghost">03</div>
+        <svg class="mcat-icon"><use href="#ic-brain"/></svg>
+        <p class="mcat-num">Categoria 03</p>
+        <h3 class="mcat-name">Aprendizado</h3>
+        <p class="mcat-desc">Para quem cresceu e fez outros crescerem ao longo de 2026.</p>
+        <ul class="mcat-list">
+          <li>Destacou-se por novo aprendizado relevante e versatilidade</li>
+          <li>Compartilhou conhecimento, elevando o nível coletivo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="divider-label" style="margin-top:44px">Categorias Especiais — Posições em Campo — Troféu Prata</div>
+    <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(167,139,250,.05);border:1px solid rgba(167,139,250,.15);margin-bottom:2px">
+      <svg style="width:14px;height:14px;flex-shrink:0;color:#A78BFA" viewBox="0 0 24 24"><use href="#ic-vote"/></svg>
+      <span style="font-family:'Bebas Neue',sans-serif;font-size:11px;font-weight:400;letter-spacing:1.0px;text-transform:uppercase;color:#A78BFA">Regra</span>
+      <span style="font-size:13px;color:rgba(255,255,255,.6);font-weight:400">Nestas categorias, os três finalistas são os <strong style="color:var(--w);font-weight:400">nomes mais indicados pelo time</strong> durante o período de indicações.</span>
+    </div>
+    <div class="fcats">
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-star"/></svg><p class="fcat-name">Atleta Revelação</p><p class="fcat-sub">O novato que chegou para ficar</p><p class="fcat-desc">Novo integrante que se destacou desde o início. A curva de aprendizado virou rampa de lançamento.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-target"/></svg><p class="fcat-name">Artilheiro</p><p class="fcat-sub">O que mais marca gols</p><p class="fcat-desc">Volume, consistência e resultado. Bateu metas e entregou mais do que se esperava.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-crown"/></svg><p class="fcat-name">Craque do Jogo</p><p class="fcat-sub">O melhor em campo</p><p class="fcat-desc">O grande destaque da Feng em 2026. Faz a diferença toda vez que entra em campo.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-pass"/></svg><p class="fcat-name">Garçom</p><p class="fcat-sub">O mestre das assistências</p><p class="fcat-desc">Conecta times e pessoas. O elo que viabiliza os gols dos outros.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-shield"/></svg><p class="fcat-name">Goleiro</p><p class="fcat-sub">O guardião das traves</p><p class="fcat-desc">Evitou que problemas virassem crises. Segurou o placar quando mais precisava.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-lateral"/></svg><p class="fcat-name">Lateral</p><p class="fcat-sub">Sempre disponível, em todo lugar</p><p class="fcat-desc">Confiabilidade total. Nunca falta quando o time precisa.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-whistle"/></svg><p class="fcat-name">Técnico do Ano</p><p class="fcat-sub">Quem faz o time jogar melhor</p><p class="fcat-desc">Liderou e desenvolveu pessoas. O talento de fazer os outros jogarem melhor.</p></div>
+      <div class="fcat"><div class="fcat-line"></div><svg class="fcat-icon"><use href="#ic-mega"/></svg><p class="fcat-name">Torcedor Número 1</p><p class="fcat-sub">A alma do vestiário</p><p class="fcat-desc">Engaja, anima e puxa a cultura. A energia que contagia o time mesmo no jogo difícil.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PAGE 3: VOTAÇÃO
+════════════════════════════════════ -->
+<div class="page" id="page-votacao">
+
+  <div class="vote-hero">
+    <div class="vote-hero-inner">
+      <div>
+        <p class="s-label">Votação Oficial</p>
+        <h2 class="s-title state-2026" style="margin-bottom:8px">Indicações<br>Oficiais 2026</h2>
+        <h2 class="s-title state-2027" style="margin-bottom:8px;display:none">Seleção dos<br>Finalistas 2027</h2>
+        <p class="s-lead state-2026" style="margin-bottom:16px;font-size:14px">Indique quem merece entrar para a história da Feng. Escolha uma pessoa por categoria e justifique sua indicação. As indicações são anônimas.</p>
+        <p class="s-lead state-2027" style="margin-bottom:16px;font-size:14px;display:none">Nas categorias principais, o Núcleo definiu os três finalistas. Nas especiais, avançaram os três mais indicados. Vote no seu favorito em cada categoria — sem parciais visíveis, sem influência. Votação sigilosa.</p>
+      </div>
+      <div class="vote-step-cards">
+        <div class="vstep state-2026 current" id="step1card">
+          <div class="vstep-num">01</div>
+          <div class="vstep-title">Indicações</div>
+          <div class="vstep-sub">Em andamento</div>
+        </div>
+        <div class="vstep state-2026" id="step2card">
+          <div class="vstep-num">02</div>
+          <div class="vstep-title">Finalistas</div>
+          <div class="vstep-sub">Abre em 2027</div>
+        </div>
+        <div class="vstep state-2026">
+          <div class="vstep-num">03</div>
+          <div class="vstep-title">Cerimônia</div>
+          <div class="vstep-sub">Abre em 2027</div>
+        </div>
+        <div class="vstep state-2027" style="display:none">
+          <div class="vstep-num" style="color:rgba(0,192,106,.5)">01</div>
+          <div class="vstep-title" style="color:rgba(0,192,106,.7)">Indicações</div>
+          <div class="vstep-sub">Concluído</div>
+        </div>
+        <div class="vstep current state-2027" style="display:none">
+          <div class="vstep-num">02</div>
+          <div class="vstep-title">Finalistas</div>
+          <div class="vstep-sub">Em andamento</div>
+        </div>
+        <div class="vstep state-2027" style="display:none">
+          <div class="vstep-num">03</div>
+          <div class="vstep-title">Cerimônia</div>
+          <div class="vstep-sub">A Grande Noite</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vote-layout" style="max-width:1160px;margin:0 auto;padding:0 48px 72px">
+
+    <!-- Sidebar -->
+    <div class="vote-sidebar" style="margin-top:2px">
+      <div class="vsb-header">
+        <div class="vsb-title">Categorias</div>
+        <div class="vsb-sub" id="sb-progress-txt">0 de 11 preenchidas</div>
+      </div>
+      <div class="vsb-item" onclick="scrollToCat('rel')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-bolt"/></svg><span class="vsb-name">Relevância</span><div class="vsb-dot" id="dot-rel"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('est')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-struct"/></svg><span class="vsb-name">Estrutura</span><div class="vsb-dot" id="dot-est"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('apr')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-brain"/></svg><span class="vsb-name">Aprendizado</span><div class="vsb-dot" id="dot-apr"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('rev')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-star"/></svg><span class="vsb-name">Atleta Revelação</span><div class="vsb-dot" id="dot-rev"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('art')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-target"/></svg><span class="vsb-name">Artilheiro</span><div class="vsb-dot" id="dot-art"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('crq')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-crown"/></svg><span class="vsb-name">Craque do Jogo</span><div class="vsb-dot" id="dot-crq"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('gar')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-pass"/></svg><span class="vsb-name">Garçom</span><div class="vsb-dot" id="dot-gar"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('gol')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-shield"/></svg><span class="vsb-name">Goleiro</span><div class="vsb-dot" id="dot-gol"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('lat')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-lateral"/></svg><span class="vsb-name">Lateral</span><div class="vsb-dot" id="dot-lat"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('tec')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-whistle"/></svg><span class="vsb-name">Técnico do Ano</span><div class="vsb-dot" id="dot-tec"></div></div>
+      <div class="vsb-item" onclick="scrollToCat('torc')"><svg class="vsb-icon" viewBox="0 0 24 24"><use href="#ic-mega"/></svg><span class="vsb-name">Torcedor Nº 1</span><div class="vsb-dot" id="dot-torc"></div></div>
+    </div>
+
+    <!-- Panels container -->
+    <div style="margin-top:2px">
+
+      <!-- ── FASE 1: INDICAÇÕES ── -->
+      <div id="panels-fase1" class="state-2026">
+        <div class="vote-panels">
+          <div class="progress-wrap">
+            <div class="progress-label"><span>Progresso das indicações</span><span id="prog-txt">0 / 11</span></div>
+            <div class="progress-bar"><div class="progress-fill" id="prog-fill" style="width:0%"></div></div>
+          </div>
+
+          <!-- cat panel macro -->
+          <div id="panel-rel">
+            <div class="vpanel-header"><p class="vph-tag">Categoria Principal 01</p><p class="vph-title">Relevância</p></div>
+            <div class="vpanel-body">
+              <div class="fi"><label>Quem você indica?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('rel',this)"></div>
+              <div class="fi"><label>Por que ele/ela merece entrar para a história?</label><textarea class="feng-input feng-ta" placeholder="Descreva o que essa pessoa fez de especial em 2026..."></textarea></div>
+            </div>
+          </div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-est">
+            <div class="vpanel-header"><p class="vph-tag">Categoria Principal 02</p><p class="vph-title">Estrutura</p></div>
+            <div class="vpanel-body">
+              <div class="fi"><label>Quem você indica?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('est',this)"></div>
+              <div class="fi"><label>Que processo ou melhoria essa pessoa implementou?</label><textarea class="feng-input feng-ta" placeholder="Descreva o impacto..."></textarea></div>
+            </div>
+          </div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-apr">
+            <div class="vpanel-header"><p class="vph-tag">Categoria Principal 03</p><p class="vph-title">Aprendizado</p></div>
+            <div class="vpanel-body">
+              <div class="fi"><label>Quem você indica?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('apr',this)"></div>
+              <div class="fi"><label>Como essa pessoa cresceu ou fez o time crescer?</label><textarea class="feng-input feng-ta" placeholder="Descreva o crescimento..."></textarea></div>
+            </div>
+          </div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div style="background:rgba(255,255,255,.025);padding:10px 28px"><div class="divider-label" style="border:none;padding:4px 0">Categorias Especiais</div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-rev"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Atleta Revelação</p></div><div class="vpanel-body"><div class="fi"><label>Indique alguém que entrou na Feng em 2026</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('rev',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-art"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Artilheiro</p></div><div class="vpanel-body"><div class="fi"><label>Quem marcou mais gols em 2026?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('art',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-crq"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Craque do Jogo</p></div><div class="vpanel-body"><div class="fi"><label>O grande craque da Feng em 2026</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('crq',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-gar"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Garçom</p></div><div class="vpanel-body"><div class="fi"><label>Quem melhor conecta áreas e passa a bola?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('gar',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-gol"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Goleiro</p></div><div class="vpanel-body"><div class="fi"><label>Quem defendeu o time nos momentos difíceis?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('gol',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-lat"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Lateral</p></div><div class="vpanel-body"><div class="fi"><label>Quem estava sempre disponível, em todo lugar?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('lat',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-tec"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Técnico do Ano</p></div><div class="vpanel-body"><div class="fi"><label>Quem fez o time ao redor jogar melhor?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('tec',this)"></div></div></div>
+          <div style="height:1px;background:var(--w04)"></div>
+          <div id="panel-torc"><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Torcedor Número 1</p></div><div class="vpanel-body"><div class="fi"><label>Quem mais anima o ambiente e puxa a cultura?</label><input class="feng-input" type="text" placeholder="Nome do colega..." oninput="markDone('torc',this)"></div></div></div>
+
+          <div class="panel-submit">
+            <span class="panel-note">Suas indicações são anônimas e vão para contagem interna.</span>
+            <button class="btn-or" onclick="submitInd()"><svg style="width:13px;height:13px" viewBox="0 0 24 24"><use href="#ic-fire"/></svg> Registrar Indicações Oficiais</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── FASE 2: FINALISTAS ── -->
+      <div id="panels-fase2" class="state-2027" style="display:none">
+        <div class="vote-panels">
+          <!-- Demo toggle -->
+          <div style="padding:14px 28px;border-bottom:1px solid var(--w06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px">
+            <span style="font-size:12px;color:var(--muted);font-weight:400">Nomes fictícios para demonstração — a votação real usará os nomes reais</span>
+            <button class="btn-ghost" style="padding:8px 18px;font-size:11px" onclick="toggleDemo()">Pré-visualizar demo</button>
+          </div>
+
+          <!-- Locked default -->
+          <div id="fase2-lock-block">
+            <div class="fase2-lock">
+              <svg class="fl-icon" viewBox="0 0 24 24"><use href="#ic-lock"/></svg>
+              <div class="fl-title">Votação Final bloqueada</div>
+              <div class="fl-sub">A votação dos finalistas abre quando o período de Indicações Oficiais encerrar. Nas categorias principais, o Núcleo define os três finalistas com base nas indicações. Nas categorias especiais, os três nomes mais indicados avançam automaticamente.</div>
+              <button class="btn-ghost" style="font-size:11px;padding:8px 18px" onclick="toggleDemo()">Ver demonstração</button>
+            </div>
+          </div>
+
+          <!-- Demo content (hidden by default) -->
+          <div id="fase2-demo" style="display:none">
+            <div style="background:rgba(255,184,0,.06);border-bottom:1px solid rgba(255,184,0,.12);padding:12px 28px;font-size:12px;color:rgba(255,184,0,.7);font-weight:400;letter-spacing:1px">⚠ DEMONSTRAÇÃO — Nomes fictícios</div>
+
+            <!-- Relevância -->
+            <div><div class="vpanel-header"><p class="vph-tag">Principal 01</p><p class="vph-title">Relevância — Os 3 Finalistas</p></div>
+            <div class="vpanel-body"><div class="pcards">
+              <label class="pcard" onclick="selP(this,'f-rel')"><input type="radio" name="f-rel"><div class="pcard-top"></div><div class="pcard-avatar">AP</div><div class="pcard-name">Ana Paula</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+              <label class="pcard" onclick="selP(this,'f-rel')"><input type="radio" name="f-rel"><div class="pcard-top"></div><div class="pcard-avatar">CM</div><div class="pcard-name">Carlos Mendes</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+              <label class="pcard" onclick="selP(this,'f-rel')"><input type="radio" name="f-rel"><div class="pcard-top"></div><div class="pcard-avatar">RF</div><div class="pcard-name">Rodrigo Faria</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+            </div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+
+            <!-- Estrutura -->
+            <div><div class="vpanel-header"><p class="vph-tag">Principal 02</p><p class="vph-title">Estrutura — Os 3 Finalistas</p></div>
+            <div class="vpanel-body"><div class="pcards">
+              <label class="pcard" onclick="selP(this,'f-est')"><input type="radio" name="f-est"><div class="pcard-top"></div><div class="pcard-avatar">LB</div><div class="pcard-name">Larissa Braga</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+              <label class="pcard" onclick="selP(this,'f-est')"><input type="radio" name="f-est"><div class="pcard-top"></div><div class="pcard-avatar">MO</div><div class="pcard-name">Marina Oliveira</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+              <label class="pcard" onclick="selP(this,'f-est')"><input type="radio" name="f-est"><div class="pcard-top"></div><div class="pcard-avatar">TN</div><div class="pcard-name">Thiago Nunes</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+            </div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+
+            <!-- Aprendizado -->
+            <div><div class="vpanel-header"><p class="vph-tag">Principal 03</p><p class="vph-title">Aprendizado — Os 3 Finalistas</p></div>
+            <div class="vpanel-body"><div class="pcards">
+              <label class="pcard" onclick="selP(this,'f-apr')"><input type="radio" name="f-apr"><div class="pcard-top"></div><div class="pcard-avatar">JS</div><div class="pcard-name">Juliana Santos</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+              <label class="pcard" onclick="selP(this,'f-apr')"><input type="radio" name="f-apr"><div class="pcard-top"></div><div class="pcard-avatar">GC</div><div class="pcard-name">Gabriel Costa</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+              <label class="pcard" onclick="selP(this,'f-apr')"><input type="radio" name="f-apr"><div class="pcard-top"></div><div class="pcard-avatar">PA</div><div class="pcard-name">Pedro Alves</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label>
+            </div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+
+            <!-- Especiais -->
+            <div style="background:rgba(255,255,255,.025);padding:10px 28px"><div class="divider-label" style="border:none;padding:4px 0">Categorias Especiais</div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Atleta Revelação</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-rev')"><input type="radio" name="f-rev"><div class="pcard-top"></div><div class="pcard-avatar">BM</div><div class="pcard-name">Beatriz Moraes</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-rev')"><input type="radio" name="f-rev"><div class="pcard-top"></div><div class="pcard-avatar">FL</div><div class="pcard-name">Felipe Lima</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-rev')"><input type="radio" name="f-rev"><div class="pcard-top"></div><div class="pcard-avatar">CC</div><div class="pcard-name">Camila Cunha</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Artilheiro</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-art')"><input type="radio" name="f-art"><div class="pcard-top"></div><div class="pcard-avatar">RV</div><div class="pcard-name">Rafael Viana</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-art')"><input type="radio" name="f-art"><div class="pcard-top"></div><div class="pcard-avatar">IS</div><div class="pcard-name">Isabella Souza</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-art')"><input type="radio" name="f-art"><div class="pcard-top"></div><div class="pcard-avatar">DM</div><div class="pcard-name">Diego Monteiro</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Craque do Jogo</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-crq')"><input type="radio" name="f-crq"><div class="pcard-top"></div><div class="pcard-avatar">CN</div><div class="pcard-name">Carolina Neves</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-crq')"><input type="radio" name="f-crq"><div class="pcard-top"></div><div class="pcard-avatar">MR</div><div class="pcard-name">Marcos Rocha</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-crq')"><input type="radio" name="f-crq"><div class="pcard-top"></div><div class="pcard-avatar">VF</div><div class="pcard-name">Vanessa Freitas</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Garçom</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-gar')"><input type="radio" name="f-gar"><div class="pcard-top"></div><div class="pcard-avatar">NC</div><div class="pcard-name">Natalia Campos</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-gar')"><input type="radio" name="f-gar"><div class="pcard-top"></div><div class="pcard-avatar">ED</div><div class="pcard-name">Eduardo Dias</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-gar')"><input type="radio" name="f-gar"><div class="pcard-top"></div><div class="pcard-avatar">KP</div><div class="pcard-name">Karen Pinto</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Goleiro</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-gol')"><input type="radio" name="f-gol"><div class="pcard-top"></div><div class="pcard-avatar">AB</div><div class="pcard-name">André Barbosa</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-gol')"><input type="radio" name="f-gol"><div class="pcard-top"></div><div class="pcard-avatar">SC</div><div class="pcard-name">Simone Castro</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-gol')"><input type="radio" name="f-gol"><div class="pcard-top"></div><div class="pcard-avatar">HM</div><div class="pcard-name">Henrique Matos</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Lateral</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-lat')"><input type="radio" name="f-lat"><div class="pcard-top"></div><div class="pcard-avatar">PR</div><div class="pcard-name">Patrícia Rezende</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-lat')"><input type="radio" name="f-lat"><div class="pcard-top"></div><div class="pcard-avatar">LS</div><div class="pcard-name">Lucas Silveira</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-lat')"><input type="radio" name="f-lat"><div class="pcard-top"></div><div class="pcard-avatar">FG</div><div class="pcard-name">Fernanda Guedes</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Técnico do Ano</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-tec')"><input type="radio" name="f-tec"><div class="pcard-top"></div><div class="pcard-avatar">OL</div><div class="pcard-name">Otávio Lemos</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-tec')"><input type="radio" name="f-tec"><div class="pcard-top"></div><div class="pcard-avatar">RP</div><div class="pcard-name">Renata Prado</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-tec')"><input type="radio" name="f-tec"><div class="pcard-top"></div><div class="pcard-avatar">WA</div><div class="pcard-name">Wagner Assis</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+            <div style="height:1px;background:var(--w04)"></div>
+            <div><div class="vpanel-header"><p class="vph-tag">Especial</p><p class="vph-title">Torcedor Número 1</p></div><div class="vpanel-body"><div class="pcards"><label class="pcard" onclick="selP(this,'f-torc')"><input type="radio" name="f-torc"><div class="pcard-top"></div><div class="pcard-avatar">TV</div><div class="pcard-name">Tânia Vieira</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-torc')"><input type="radio" name="f-torc"><div class="pcard-top"></div><div class="pcard-avatar">BN</div><div class="pcard-name">Bruno Nogueira</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label><label class="pcard" onclick="selP(this,'f-torc')"><input type="radio" name="f-torc"><div class="pcard-top"></div><div class="pcard-avatar">SB</div><div class="pcard-name">Sofia Branco</div><div class="pcard-sub">Finalista 2026</div><div class="pcard-sel"><div class="pdot"></div> Votar</div></label></div></div></div>
+
+            <div class="panel-submit">
+              <span class="panel-note">⚠ Demonstração — votação real abre em 2027</span>
+              <button class="btn-gold" onclick="submitF2()"><svg style="width:13px;height:13px" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg> Confirmar Voto Final</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /panels -->
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PAGE 4: PREMIAÇÃO
+════════════════════════════════════ -->
+<div class="page" id="page-premiacao">
+  <div class="pw">
+    <p class="s-label">Premiação Oficial Feng</p>
+    <h2 class="s-title">Entrar para a<br>história da Feng</h2>
+    <p class="s-lead">Reconhecimento real, além do troféu. Os vencedores de cada edição ganham experiências que marcam o ano.</p>
+    <div class="premio-grid">
+      <div class="ptier gold">
+        <div class="ptier-bg">OURO</div>
+        <p class="ptier-tag">Troféu Principal — Ouro</p>
+        <h3 class="ptier-title">Relevância · Estrutura<br>Aprendizado</h3>
+        <p class="ptier-sub">Os três grandes pilares da cultura Feng</p>
+        <div class="pitem"><div class="pitem-icon"><svg viewBox="0 0 24 24"><use href="#ic-ticket"/></svg></div><div><div class="pitem-qty">× 2</div><div class="pitem-label">Jogos de Camarote</div><div class="pitem-detail">Dois jogos ao longo do ano com experiência de camarote.</div></div></div>
+        <div class="pitem"><div class="pitem-icon"><svg viewBox="0 0 24 24"><use href="#ic-sun"/></svg></div><div><div class="pitem-qty">× 2</div><div class="pitem-label">Folgas Extras</div><div class="pitem-detail">Dois dias livres adicionais no ano para usar quando quiser.</div></div></div>
+        <div class="ptier-cats"><p>Categorias contempladas</p>
+          <div class="pcat-item"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg> Relevância</div>
+          <div class="pcat-item"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg> Estrutura</div>
+          <div class="pcat-item"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg> Aprendizado</div>
+        </div>
+      </div>
+      <div class="ptier silver">
+        <div class="ptier-bg">PRATA</div>
+        <p class="ptier-tag">Troféu Especial — Prata</p>
+        <h3 class="ptier-title">As posições<br>do campo</h3>
+        <p class="ptier-sub">As oito categorias especiais do futebol</p>
+        <div class="pitem"><div class="pitem-icon"><svg viewBox="0 0 24 24"><use href="#ic-ticket"/></svg></div><div><div class="pitem-qty">× 1</div><div class="pitem-label">Jogo de Camarote</div><div class="pitem-detail">Um jogo no ano com experiência de camarote.</div></div></div>
+        <div class="pitem"><div class="pitem-icon"><svg viewBox="0 0 24 24"><use href="#ic-sun"/></svg></div><div><div class="pitem-qty">× 1</div><div class="pitem-label">Folga Extra</div><div class="pitem-detail">Um dia livre adicional — uma pausa merecida.</div></div></div>
+        <div class="ptier-cats"><p>Categorias contempladas</p>
+          <div class="pcat-item"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg> Atleta Revelação · Artilheiro</div>
+          <div class="pcat-item"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg> Craque do Jogo · Garçom</div>
+          <div class="pcat-item"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg> Goleiro · Lateral · Técnico · Torcedor</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="night-block">
+      <svg class="nb-trophy" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+      <p class="nb-kicker">Terceiro Ato · O Clímax</p>
+      <h2 class="nb-title">A Grande<br>Noite</h2>
+      <p class="nb-sub">— Mais do que uma premiação. Um ritual de cultura. —</p>
+      <p class="nb-copy">É a noite em que a temporada termina com chave de ouro. Os vencedores são anunciados ao vivo, reconhecidos na frente de todo o time, e seus nomes ficam registrados para sempre no Hall da Fama da Feng.</p>
+      <div class="nb-pillars">
+        <div class="nbp"><svg class="nbp-icon" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg><div class="nbp-title">Anúncio ao Vivo</div><div class="nbp-desc">Os vencedores são revelados em tempo real — com suspense e reconhecimento público na frente de todo o time.</div></div>
+        <div class="nbp"><svg class="nbp-icon" viewBox="0 0 24 24"><use href="#ic-medal"/></svg><div class="nbp-title">Entrega do Troféu</div><div class="nbp-desc">O Troféu Feng Awards — um símbolo físico que representa o legado de um ano inteiro de trabalho.</div></div>
+        <div class="nbp"><svg class="nbp-icon" viewBox="0 0 24 24"><use href="#ic-history"/></svg><div class="nbp-title">Registro Histórico</div><div class="nbp-desc">O nome entra para o Hall da Fama Feng — o registro permanente de quem fez a diferença, edição por edição.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════════════════════════════════
+     PAGE 5: HALL DA FAMA
+════════════════════════════════════ -->
+<div class="page" id="page-hall">
+  <div class="pw">
+    <p class="s-label">Legado · História</p>
+    <h2 class="s-title">Hall da Fama<br>Feng Awards</h2>
+    <p class="s-lead">O registro permanente de quem fez a diferença. Edição por edição, a história da Feng é escrita aqui — para sempre.</p>
+
+    <div class="hof-banner">
+      <div class="hof-bl">
+        <svg class="hof-icon" viewBox="0 0 24 24"><use href="#ic-history"/></svg>
+        <div>
+          <div class="hof-label">Hall da Fama</div>
+          <div class="hof-sub">Vencedores por edição · Registro histórico oficial</div>
+        </div>
+      </div>
+      <div class="hof-badge">Desde 2027</div>
+    </div>
+
+    <div class="hof-year">
+      <div class="hof-yh">
+        <div class="hof-ynum">2027</div>
+        <div class="hof-ytag">Edição Inaugural · Temporada 2026</div>
+      </div>
+      <div class="hof-empty">
+        <svg class="hof-ei" viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+        <div class="hof-et">Vencedores em breve</div>
+        <div class="hof-es">Os nomes dos vencedores da Primeira Edição Oficial serão inscritos aqui após a Cerimônia de Premiação em 2027.<br><br>Esta página se tornará o registro permanente da história da Feng — edição por edição, ano após ano.</div>
+      </div>
+    </div>
+
+    <div class="manifesto">
+      <div class="manifesto-quote">Mais do que uma premiação, o Feng Awards é o momento em que a história da Feng é escrita.</div>
+      <div class="manifesto-attr">— Feng Awards · Desde 2027</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="fb">
+    <svg viewBox="0 0 24 24"><use href="#ic-trophy"/></svg>
+    <div class="fb-text">FENG <em>AWARDS</em></div>
+  </div>
+  <div class="fc">Temporada 2026 · Primeira Edição Oficial em 2027 · A História Começa Aqui</div>
+</footer>
+
+
+
+<!-- TOAST -->
+<div class="toast" id="toast"><svg viewBox="0 0 24 24"><use href="#ic-check"/></svg><span id="toast-msg">Enviado!</span></div>
+
+
+<script>
+  // ── TAB NAVIGATION ──
+  const pages = ['sobre','categorias','votacao','premiacao','hall'];
+  function goTab(id){
+    pages.forEach(p=>{
+      document.getElementById('page-'+p)?.classList.remove('active');
+      document.getElementById('tab-'+p)?.classList.remove('active');
+    });
+    document.getElementById('page-'+id)?.classList.add('active');
+    document.getElementById('tab-'+id)?.classList.add('active');
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+
+  // ── STATE TOGGLE (2026 / 2027) ──
+  let currentState = '2026';
+  function setState(s){
+    currentState = s;
+    document.getElementById('sbtn-2026').classList.toggle('on', s==='2026');
+    document.getElementById('sbtn-2027').classList.toggle('on', s==='2027');
+    if(s==='2027'){
+      document.body.classList.add('s2027');
+      // show fase2 panels, hide fase1
+      document.getElementById('panels-fase1')?.style && (document.getElementById('panels-fase1').style.display='none');
+      document.getElementById('panels-fase2')?.style && (document.getElementById('panels-fase2').style.display='block');
+      // update badge
+      document.querySelectorAll('.tab-badge').forEach(b=>b.textContent='VOTE JÁ');
+    } else {
+      document.body.classList.remove('s2027');
+      document.getElementById('panels-fase1')?.style && (document.getElementById('panels-fase1').style.display='block');
+      document.getElementById('panels-fase2')?.style && (document.getElementById('panels-fase2').style.display='none');
+      document.querySelectorAll('.tab-badge').forEach(b=>b.textContent='ABERTO');
+    }
+    // toggle all state-2026/2027 elements
+    document.querySelectorAll('.state-2026').forEach(el=>el.style.display = s==='2026' ? '' : 'none');
+    document.querySelectorAll('.state-2027').forEach(el=>el.style.display = s==='2027' ? '' : 'none');
+  }
+
+  // ── FASE 1 PROGRESS ──
+  const cats = ['rel','est','apr','rev','art','crq','gar','gol','lat','tec','torc'];
+  const filled = {};
+  function markDone(cat, el){
+    const wasDone = filled[cat];
+    filled[cat] = el.value.trim().length > 0;
+    if(filled[cat] !== wasDone){
+      const dot = document.getElementById('dot-'+cat);
+      const item = dot?.closest('.vsb-item');
+      if(dot) dot.style.background = filled[cat] ? 'var(--green)' : '';
+      if(dot) dot.style.borderColor = filled[cat] ? 'var(--green)' : '';
+      if(item) item.classList.toggle('done', filled[cat]);
+      updateProgress();
+    }
+  }
+  function updateProgress(){
+    const count = Object.values(filled).filter(Boolean).length;
+    const pct = Math.round(count/11*100);
+    document.getElementById('prog-fill').style.width = pct+'%';
+    document.getElementById('prog-txt').textContent = count+' / 11';
+    document.getElementById('sb-progress-txt').textContent = count+' de 11 preenchidas';
+  }
+  function scrollToCat(cat){
+    const el = document.getElementById('panel-'+cat);
+    if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  // ── FASE 2 ──
+  function selP(card, name){
+    const group = card.closest('.pcards');
+    group.querySelectorAll('.pcard').forEach(c=>c.classList.remove('selected'));
+    card.classList.add('selected');
+    card.querySelector('input[type=radio]').checked = true;
+  }
+  let demoOpen = false;
+  function toggleDemo(){
+    demoOpen = !demoOpen;
+    document.getElementById('fase2-lock-block').style.display = demoOpen ? 'none' : 'block';
+    document.getElementById('fase2-demo').style.display = demoOpen ? 'block' : 'none';
+    if(demoOpen) toast('Demonstração ativada — nomes fictícios');
+  }
+
+  // ── TOAST ──
+  function toast(msg){
+    const t = document.getElementById('toast');
+    document.getElementById('toast-msg').textContent = msg;
+    t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'), 3800);
+  }
+  function submitInd(){ toast('Indicações oficiais registradas. Obrigado!') }
+  function submitF2(){ toast('Voto confirmado. Que vença o melhor!') }
+</script>
+</body>
+</html>
